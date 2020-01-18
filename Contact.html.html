@@ -1,0 +1,155 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact</title>
+</head>
+<div id="header">
+    <h1>Contact Us</h1>
+
+    <body>
+        <div id="main">
+            <ul>
+                <li class="page"><a href="index.html.html">Home</a></li>
+                <li class="page"><a href="OurPlan.html.html">Our Plans</a></li>
+                <li class="page"><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <br>
+            <h3> We'd like to hear from you!</h3>
+            <h3>Please feel free to contact us</h3>
+
+            <div class="contact-form">
+                <form class="contact-form" action="contact-form-handler.php" method="POST">
+                    <input name="name" type="text" class="form-control" placeholder="Full Name" required>
+                    <br>
+                    <input name="email" type="text" class="form-control" placeholder="Your Email" required>
+                    <br>
+                    <textarea name="message" class="form-control" placeholder="Message" rows="4" required></textarea>
+                    <br>
+                    <button type="submit" class="form-control submit" name="Send Message">Send Message</button>
+                </form>
+            </div>
+            <p>Alternatively, you can email us at JaydaBeatBox@yahoo.com </p>
+            <div id="footer">
+                CopyRight &copy; 2020 Jayda Watson
+            </div>
+            <style>
+                #header {
+                    background-color: black;
+                }
+
+                #main {
+                    background-color: black;
+                }
+
+                #content {
+                    background-color: grey;
+                }
+
+                .page {
+                    text-align: center;
+                }
+
+                form {
+                    margin-top: 50px;
+                    transition: all 4s ease-in-out;
+                    text-align: center;
+                }
+
+                .form-control {
+                    width: 97%;
+                    background: white;
+                    border: none;
+                    outline: none;
+                    border-bottom: 1px solid black;
+                    color: hotpink;
+                    font-size: 18px;
+                    margin-bottom: 16px;
+                    text-align: center;
+                }
+
+                input {
+                    height: 45px;
+                }
+
+                form .submit {
+                    background: black;
+                    border-color: transparent;
+                    color: white;
+                    font-size: 20px;
+                    font-weight: bold;
+                    letter-spacing: 2px;
+                    height: 50px;
+                    margin-top: 20px;
+                }
+
+                form .submit:hover {
+                    background-color: hotpink;
+                    cursor: pointer;
+                }
+
+                #footer {
+                    clear: both;
+                    padding: 10px;
+                    background-color: black;
+                    color: white;
+                    text-align: right;
+                }
+
+                body {
+                    background-color: grey;
+                    width: 97%;
+                    height: 100%;
+                }
+
+                html {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                h1 {
+                    color: hotpink;
+                    text-align: center;
+                }
+
+                h3 {
+                    text-align: center;
+                    font-family: unset
+                }
+
+                p {
+                    text-align: center;
+                }
+
+                ul {
+                    list-style-type: none;
+                    overflow: hidden;
+                    width: 410px;
+                    margin: 0px auto;
+                    text-align: center;
+                    padding: 5px;
+                    left:
+                }
+
+                li {
+                    width: 120px;
+                    height: 40px;
+                    margin: 0px auto;
+                    float: left;
+                }
+
+                a {
+                    width: 120px;
+                    height: 40px;
+                    line-height: 40px;
+                    text-decoration: none;
+                    text-align: center;
+                }
+            </style>
+    </body>
+
+</html>
