@@ -7,7 +7,7 @@ if (isset($_POST['submit'])) {
 
     $mailTo = "jaydabeatbox@yahoo.com";
     $headers = "From: ".$mailFrom;
-    $txt = "You have recieved an email from ".$name.".\n\n".message;
+    $txt = "You have recieved an email from ".$name.".\n\n".$message;
 
     mail($mailTo, $txt, $headers);
     header("Location: Contact.html?mailsend");
