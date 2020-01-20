@@ -2,7 +2,7 @@
 
 if(isset($_POST['Send']))
 {
-    echo'Working';
+    echo 'Working';
 }
 
 
