@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./main.js"></script>
     <title>Contact</title>
 </head>
 <div id="header">
@@ -25,14 +26,16 @@
         </div>
 
         <div class="contact-form">
-            <form id="contact-form" method="POST" action="contact-form-handler.php">
+            <form id="contact-form" method="POST" action="http://formspree.io/watsonjaydabooking@gmail.com">
                 <input type="text" name="name" class="form-control" placeholder="Your Name">
                 <br>
                 <input type="email" name="email" class="form-control" placeholder="Your Email"><br>
+                <input type="text" name="subject" class="form-control" placeholder="Subject"><br>
 
-                <textarea name="message" class="form-control" placeholder="Message"></textarea><br>
+                <textarea name="message" class="form-control" placeholder="Message" rows="4"></textarea><br>
 
                 <button class="form-control submit" name="Send">Send Message</button>
+                <div class="status"></div>
             </form>
         </div>
         <p>Send Button Does Not Work! Website is still underconstruction.Alternatively, you can email us at Watsonjaydabooking@gmail.com </p>
