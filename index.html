@@ -4,6 +4,7 @@
 <title>Jayda's Beat Box</title>
 
 <head>
+    <script src="./toggle.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -14,10 +15,17 @@
         <h1>Jayda's Beat Box</h1>
 
         <div id="main">
+            <div class="toggle-btn" onclick="togglesidebar()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <ul>
                 <li class="page"><a href="#">Home</a></li>
                 <li class="page"><a href="OurPlan.html">Our Plans</a></li>
+                <li class="page"><a href="Shop.html">Shop</a></li>
                 <li class="page"><a href="Contact.html">Contact</a></li>
+
             </ul>
         </div>
 
@@ -33,7 +41,7 @@
 
             <div id="about us">
                 <h2>About Us</h2>
-                <p>Beat Box is a custom box filled with beauty products, each month customers will recieve a box of their choice. </p>
+                <p>Beat Box is a custom subscription box filled with beauty products, each month customers will recieve a box of their choice. There are three options to choose from Platinum, Gold, and Premium. The Platinum plan is the highest plan which offers everything Beat Box has to offer while, the Gold Plan offers similar products but not everything that we offer and lastly Premium is more of a trail run to see if Beat Box is the perfect fit for you. Each month the boxes will be filled with a variety of beauty products as well as different scents and flavors. As well as each customer will be able to obtain a custom Beat Box bonnet. Beat Box is targeted to those who use products as such; Lashes, Compact Mirrors, Lip Gloss, Candles, Eye masks, and Bonnets. Beat Box is constantly growing and continues to recieve feedback from customers to provide the perfect box for each customer.</p>
             </div>
 
             <div id="footer">
@@ -47,6 +55,11 @@
 
                 #main {
                     background-color: black;
+                    position:fixed;
+                    width:200px;
+                    height:100%;
+                    left: -200px;
+                    transition: all 500ms linear;
                 }
 
                 #content {
@@ -93,17 +106,37 @@
                 ul {
                     list-style-type: none;
                     overflow: hidden;
-                    width: 410px;
                     margin: 0px auto;
                     text-align: center;
                     padding: 5px; left:auto
                 }
 
                 li {
+                    color:rgba(hotpink,hotpink,hotpink,hotpink,0.9);
+                    list-style: none;
+                    padding: 15px 10px;
+                    border-bottom: 1px solid rgba(100, 100, 100, 100,0.3);
                     width: 120px;
                     height: 40px;
                     margin: 0px auto;
-                    float: left;
+                }
+
+                #main .toggle-btn {
+                    position: absolute;
+                    left: 230px;
+                    top: 1px;
+                }
+
+                #main .toggle-btn span{
+                    display: block;
+                    width: 30px;
+                    height: 5px;
+                    background: black;
+                    margin: 3px 0px;
+                }
+
+                #main.active{
+                    left: 0px;
                 }
 
                 a {
@@ -111,8 +144,9 @@
                     height: 40px;
                     line-height: 40px;
                     text-decoration: none;
-                    text-align: center;
+                    text-align: left;
                 }
+
             </style>
         </div>
     </div>

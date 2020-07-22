@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="./main.js"></script>
+    <script src="./toggle.js"></script>
     <title>Contact</title>
 </head>
 <div id="header">
@@ -12,10 +13,17 @@
 
     <body>
         <div id="main">
+            <div class="toggle-btn" onclick="togglesidebar()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <ul>
                 <li class="page"><a href="index.html">Home</a></li>
                 <li class="page"><a href="OurPlan.html">Our Plans</a></li>
+                <li class="page"><a href="Shop.html">Shop</a></li>
                 <li class="page"><a href="#">Contact</a></li>
+
             </ul>
         </div>
         <div id="content">
@@ -49,6 +57,11 @@
 
             #main {
                 background-color: black;
+                    position:fixed;
+                    width:200px;
+                    height:100%;
+                    left: -200px;
+                    transition: all 500ms linear;
             }
 
             #content {
@@ -133,19 +146,38 @@
             ul {
                 list-style-type: none;
                 overflow: hidden;
-                width: 410px;
                 margin: 0px auto;
                 text-align: center;
-                padding: 5px;
-                left: auto
+                padding: 5px; left:auto
             }
 
             li {
+                color:rgba(hotpink,hotpink,hotpink,hotpink,0.9);
+                list-style: none;
+                padding: 15px 10px;
+                border-bottom: 1px solid rgba(100, 100, 100, 100,0.3);
                 width: 120px;
                 height: 40px;
                 margin: 0px auto;
-                float: left;
             }
+
+            #main .toggle-btn {
+                    position: absolute;
+                    left: 230px;
+                    top: 1px;
+                }
+
+            #main .toggle-btn span{
+                    display: block;
+                    width: 30px;
+                    height: 5px;
+                    background: black;
+                    margin: 3px 0px;
+                }
+
+            #main.active{
+                    left: 0px;
+                }
 
             a {
                 width: 120px;

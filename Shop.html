@@ -1,0 +1,236 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./toggle.js"></script>
+    <title>Shop</title>
+</head>
+<div id="header">
+    <h1>Shop</h1>
+
+    <body>
+        <div id="main">
+            <div class="toggle-btn" onclick="togglesidebar()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul>
+                <li class="page"><a href="index.html">Home</a></li>
+                <li class="page"><a href="OurPlan.html">Our Plans</a></li>
+                <li class="page"><a href="#">Shop</a></li>
+                <li class="page"><a href="Contact.html">Contact</a></li>
+
+            </ul>
+        </div>
+
+        <div class="card">
+            <img src="image" alt="Stallion" style="width:100%">
+            <h1>Stallion</h1>
+            <p class="price">$15.00</p>
+            <p>25mm Mink Lashes</p>
+            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="JS65T2BVGVBE2">
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                </form>                
+        </div>
+
+        <div class="card">
+            <img src="image" alt="Baby Doll" style="width:100%">
+            <h1>Baby Doll</h1>
+            <p class="price">$15.00</p>
+            <p>25mm Mink Lashes</p>
+            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="27R3WLEWWY77J">
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                </form>
+                
+                
+        </div>
+
+        <div class="card">
+            <img src="image" alt="Strawberry Kiwi" style="width:100%">
+            <h1>Strawberry Kiwi</h1>
+            <p class="price">$15.00</p>
+            <p>25mm Mink Lashes</p>
+            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="MSLC5EEJ5W5FW">
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                </form>
+        </div>
+
+        <div class="card">
+            <img src="image" alt="Princess" style="width:100%">
+            <h1>Princess</h1>
+            <p class="price">$15.00</p>
+            <p>25mm Mink Lashes</p>
+            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="X9TP3CL9S8BC2">
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                </form>       
+        </div>
+
+        <div class="card">
+            <img src="image" alt="Juicy Fruit" style="width:100%">
+            <h1>Juicy Fruit</h1>
+            <p class="price">$15.00</p>
+            <p>25mm Mink Lashes</p>
+            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="VP4VMLN9PPYNE">
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                </form>     
+        </div>
+
+<div id="footer">
+    CopyRight &copy; 2020 Jayda Watson
+</div>
+
+<style>
+    #header {
+        background-color: white;
+    }
+
+    #main {
+        background-color: black;
+        position: fixed;
+        width: 200px;
+        height: 100%;
+        left: -200px;
+        transition: all 500ms linear;
+    }
+
+    .card {
+        box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+        max-width: 300px;
+        margin: auto;
+        text-align: center;
+        font-family: arial;
+    }
+
+    .price {
+        color: black;
+        font-size: 22px;
+    }
+
+    .card button {
+        border: none;
+        outline: 0;
+        padding: 12px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+    }
+
+    #card {
+        background-color: white;
+    }
+
+    .content {
+        text-align: center;
+    }
+
+    .page {
+        text-align: center;
+    }
+
+    #footer {
+        clear: both;
+        padding: 10px;
+        background-color: black;
+        color: white;
+        text-align: right;
+    }
+
+    body {
+        background-color: white;
+        width: 97%;
+        height: 100%;
+    }
+
+    html {
+        width: 100%;
+        height: 100%;
+    }
+
+    h1 {
+        color: hotpink;
+        text-align: center;
+    }
+
+    h2 {
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        background-color: lawngreen;
+    }
+
+    h3 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    p {
+        text-align: left;
+    }
+
+    ul {
+        list-style-type: none;
+        overflow: hidden;
+        margin: 0px auto;
+        text-align: center;
+        padding: 5px;
+        left: auto
+    }
+
+    li {
+        color: rgba(hotpink, hotpink, hotpink, hotpink, 0.9);
+        list-style: none;
+        padding: 15px 10px;
+        border-bottom: 1px solid rgba(100, 100, 100, 100, 0.3);
+        width: 120px;
+        height: 40px;
+        margin: 0px auto;
+    }
+
+    #main .toggle-btn {
+        position: absolute;
+        left: 230px;
+        top: 1px;
+    }
+
+    #main .toggle-btn span {
+        display: block;
+        width: 30px;
+        height: 5px;
+        background: black;
+        margin: 3px 0px;
+    }
+
+    #main.active {
+        left: 0px;
+    }
+
+    a {
+        width: 120px;
+        height: 40px;
+        line-height: 40px;
+        text-decoration: none;
+        text-align: center;
+    }
+</style>
+</body>
+
+</html>
