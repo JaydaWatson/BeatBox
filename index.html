@@ -14,6 +14,17 @@
     <div id="header">
         <h1>Jayda's Beat Box</h1>
 
+        <div id="viewcart">
+            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="encrypted"
+                    value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_viewcart_SM.gif" border="0"
+                    name="submit" alt="PayPal - The safer, easier way to pay online!">
+                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            </form>
+        </div>
+
         <div id="main">
             <div class="toggle-btn" onclick="togglesidebar()">
                 <span></span>
@@ -36,12 +47,45 @@
                 now.</h3>
             <div class="content"><a href="OurPlan.html"><button
                         style="border-radius: 10px;justify-content: center;margin: 0px auto;float: initial; color: black;background-color: lightgrey;">Our
-                        Plans</button></a></div>
+                        Plans</button></a>
+            </div>
+
+            <br>
+
+            <div class="slider-container">
+                <span id="slider-image-1"></span>
+                <span id="slider-image-2"></span>
+                <span id="slider-image-3"></span>
+
+                <div class="image-container">
+                    <img src="Mya-Cousin-Customer.JPG" class="slider-image">
+                    <img src="Key-Customer.JPG" class="slider-image">
+                    <img src="Momo-Customer.JPG" class="slider-image">
+
+                </div>
+
+                <div class="button-container">
+                    <a href="#slider-image-1" class="slider-button"></a>
+                    <a href="#slider-image-2" class="slider-button"></a>
+                    <a href="#slider-image-3" class="slider-button"></a>
+                </div>
+            </div>
+
             <br>
 
             <div id="about us">
                 <h2>About Us</h2>
-                <p>Beat Box is a custom subscription box filled with beauty products, each month customers will recieve a box of their choice. There are three options to choose from Platinum, Gold, and Premium. The Platinum plan is the highest plan which offers everything Beat Box has to offer while, the Gold Plan offers similar products but not everything that we offer and lastly Premium is more of a trail run to see if Beat Box is the perfect fit for you. Each month the boxes will be filled with a variety of beauty products as well as different scents and flavors. As well as each customer will be able to obtain a custom Beat Box bonnet. Beat Box is targeted to those who use products as such; Lashes, Compact Mirrors, Lip Gloss, Candles, Eye masks, and Bonnets. Beat Box is constantly growing and continues to recieve feedback from customers to provide the perfect box for each customer.</p>
+                <p>Beat Box is a custom subscription box filled with self care products, each month customers will
+                    recieve
+                    a box of their choice. There are three options to choose from Platinum, Gold, and Premium. The
+                    Platinum plan is the highest plan which offers everything Beat Box has to offer while, the Gold Plan
+                    offers similar products but not everything that we offer and lastly Premium is more of a trail run
+                    to see if Beat Box is the perfect fit for you. Each month the boxes will be filled with a variety of
+                    self care products as well as different scents and flavors. As well as each customer will be able to
+                    obtain a custom Beat Box bonnet. Beat Box is targeted to those who use products as such; Lashes,
+                    Compact Mirrors, Lip Gloss, Candles, Eye masks, and Bonnets. Beat Box is constantly growing and
+                    continues to recieve feedback from customers to provide the perfect box for each customer. If one
+                    wishes to purchase and item individually they will be available on our shop page.</p>
             </div>
 
             <div id="footer">
@@ -49,15 +93,15 @@
             </div>
 
             <style>
-                 #header {
+                #header {
                     font-family: Georgia, 'Times New Roman', Times, serif
                 }
 
                 #main {
                     background-color: black;
-                    position:fixed;
-                    width:200px;
-                    height:100%;
+                    position: fixed;
+                    width: 200px;
+                    height: 100%;
                     left: -200px;
                     transition: all 500ms linear;
                 }
@@ -93,9 +137,17 @@
                     height: 100%;
                 }
 
+                p {
+                    text-align: center;
+                }
+
                 h1 {
                     color: hotpink;
                     text-align: center;
+                }
+
+                h2 {
+                    text-align: left;
                 }
 
                 h3 {
@@ -108,14 +160,15 @@
                     overflow: hidden;
                     margin: 0px auto;
                     text-align: center;
-                    padding: 5px; left:auto
+                    padding: 5px;
+                    left: auto
                 }
 
                 li {
-                    color:rgba(hotpink,hotpink,hotpink,hotpink,0.9);
+                    color: rgba(hotpink, hotpink, hotpink, hotpink, 0.9);
                     list-style: none;
                     padding: 15px 10px;
-                    border-bottom: 1px solid rgba(100, 100, 100, 100,0.3);
+                    border-bottom: 1px solid rgba(100, 100, 100, 100, 0.3);
                     width: 120px;
                     height: 40px;
                     margin: 0px auto;
@@ -127,7 +180,7 @@
                     top: -40px;
                 }
 
-                #main .toggle-btn span{
+                #main .toggle-btn span {
                     display: block;
                     width: 30px;
                     height: 5px;
@@ -135,8 +188,13 @@
                     margin: 3px 0px;
                 }
 
-                #main.active{
+                #main.active {
                     left: 0px;
+                }
+
+                #viewcart {
+                    text-align: right;
+                    top: -40px;
                 }
 
                 a {
@@ -147,6 +205,60 @@
                     text-align: left;
                 }
 
+                .slider-container {
+                    width: 800px;
+                    height: 600px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    overflow: hidden;
+                    text-align: center;
+                }
+
+                .image-container {
+                    width: 2400px;
+                    height: 600px;
+                    position: relative;
+                    text-align: center;
+                    transition: left 2s;
+                    -webkit-transition: left 2s;
+                }
+
+                .slider-image {
+                    float: left;
+                    margin: 0px;
+                    padding: 0px;
+                    text-align: center;
+                }
+
+                .button-container {
+                    top: -20px;
+                    position: relative;
+                    text-align: center;
+                }
+
+                .slider-button {
+                    display: inline-block;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 5px;
+                    background-color: white;
+                    text-align: center;
+                }
+
+                #slider-image-1:target~.image-container {
+                    left: 0px;
+                    text-align: center;
+                }
+
+                #slider-image-2:target~.image-container {
+                    left: -800px;
+                    text-align: center;
+                }
+
+                #slider-image-3:target~.image-container {
+                    left: -1600px;
+                    text-align: center;
+                }
             </style>
         </div>
     </div>

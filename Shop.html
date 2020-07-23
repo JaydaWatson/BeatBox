@@ -8,7 +8,16 @@
     <title>Shop</title>
 </head>
 <div id="header">
-    <h1>Shop</h1>
+    <h1>Shop</h1>   
+
+    <div id="viewcart">
+    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----MIIG1QYJKoZIhvcNAQcEoIIGxjCCBsICAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYABb/NaeDd3lQ+BxkRAEL8VLL+To1cpqfiQ9joxJyvUgRd4m3j8Q2nU8go1HPoeAfzLAUfHxGH3INwdRdF+Oi6b1ms4Gyg5E8eACgJc5IF6bVi3uPBca4wVRBvWx0TGPcgz7Iuhdf6TIv3ZpF5Yq1RK8Jd8Uplf6GZw8ymK+ODIxzELMAkGBSsOAwIaBQAwUwYJKoZIhvcNAQcBMBQGCCqGSIb3DQMHBAg0cyTvigKIVYAwEJ7O3I4/xvLtadbLejU/AibpLqmQ4D878Qf85ee0QvrPCzTo8TGYyZVLVNUALZY+oIIDhzCCA4MwggLsoAMCAQICAQAwDQYJKoZIhvcNAQEFBQAwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tMB4XDTA0MDIxMzEwMTMxNVoXDTM1MDIxMzEwMTMxNVowgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDBR07d/ETMS1ycjtkpkvjXZe9k+6CieLuLsPumsJ7QC1odNz3sJiCbs2wC0nLE0uLGaEtXynIgRqIddYCHx88pb5HTXv4SZeuv0Rqq4+axW9PLAAATU8w04qqjaSXgbGLP3NmohqM6bV9kZZwZLR/klDaQGo1u9uDb9lr4Yn+rBQIDAQABo4HuMIHrMB0GA1UdDgQWBBSWn3y7xm8XvVk/UtcKG+wQ1mSUazCBuwYDVR0jBIGzMIGwgBSWn3y7xm8XvVk/UtcKG+wQ1mSUa6GBlKSBkTCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb22CAQAwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQUFAAOBgQCBXzpWmoBa5e9fo6ujionW1hUhPkOBakTr3YCDjbYfvJEiv/2P+IobhOGJr85+XHhN0v4gUkEDI8r2/rNk1m0GA8HKddvTjyGw/XqXa+LSTlDYkqI8OwR8GEYj4efEtcRpRYBxV8KxAW93YDWzFGvruKnnLbDAF6VR5w/cCMn5hzGCAZowggGWAgEBMIGUMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbQIBADAJBgUrDgMCGgUAoF0wGAYJKoZIhvcNAQkDMQsGCSqGSIb3DQEHATAcBgkqhkiG9w0BCQUxDxcNMjAwNzIzMDIxMzA2WjAjBgkqhkiG9w0BCQQxFgQU9Krkzwb2NqnntERiXAdU7eF8tzcwDQYJKoZIhvcNAQEBBQAEgYB62UAN5RtFaw2T6JQ9t/uF3BE+H1thxjFOl48zdbcDDr0fkInLJHCRAyGtTt9IRc8zszOdofJZHoYBw9Lt6BEvYJVsMuESLU/De2oycCavKbR0UsLtb/NkvSBnEHJ5lukds7b6JwrUXPAeq/gdJQfGkRthSfC8zg9+ru6BbcEsdw==-----END PKCS7-----">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_viewcart_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+    </div>
 
     <body>
         <div id="main">
@@ -28,7 +37,7 @@
 
         <div class="card">
             <img src="stallion.jpg.jpeg" alt="Stallion" style="width:100%" >
-            <h1>Stallion</h1>
+            <h2>Stallion</h1>
             <p class="price">$15.00</p>
             <p>25mm Mink Lashes</p>
             <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
@@ -41,7 +50,7 @@
 
         <div class="card">
             <img src="Baby-Doll.jpg.png" alt="Baby Doll" style="width:100%">
-            <h1>Baby Doll</h1>
+            <h2>Baby Doll</h1>
             <p class="price">$15.00</p>
             <p>25mm Mink Lashes</p>
             <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
@@ -54,7 +63,7 @@
 
         <div class="card">
             <img src="Strawberry-Kiwi.jpg.jpeg" alt="Strawberry Kiwi" style="width:100%">
-            <h1>Strawberry Kiwi</h1>
+            <h2>Strawberry Kiwi</h1>
             <p class="price">$15.00</p>
             <p>25mm Mink Lashes</p>
             <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
@@ -67,7 +76,7 @@
 
         <div class="card">
             <img src="Princess.jpg.png" alt="Princess" style="width:100%">
-            <h1>Princess</h1>
+            <h2>Princess</h1>
             <p class="price">$15.00</p>
             <p>25mm Mink Lashes</p>
             <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
@@ -80,7 +89,7 @@
 
         <div class="card">
             <img src="Juicy-Fruit.jpg.jpeg" alt="Juicy Fruit" style="width:100%">
-            <h1>Juicy Fruit</h1>
+            <h2>Juicy Fruit</h1>
             <p class="price">$15.00</p>
             <p>25mm Mink Lashes</p>
             <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
@@ -138,6 +147,11 @@
         background-color: white;
     }
 
+    #viewcart{
+        text-align: right;
+        top: -40px;
+    }
+
     .content {
         text-align: center;
     }
@@ -166,14 +180,18 @@
     }
 
     h1 {
+        background-color: black;
         color: hotpink;
         text-align: center;
+        font-style: italic;
+        font-size: 50;
     }
 
     h2 {
         text-align: center;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        background-color: lawngreen;
+        font-family: serif;
+        color: hotpink;
+        background-color: lightgrey;
     }
 
     h3 {
